@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="validation">
+            
+            <form action="">
+                <div>
+                    <label for="">Full Name </label> 
+                    <input type="text" name="Full Name :" id="name" placeholder="Enter your name" onkeydown="validateName()">
+                    <span id="nameErr" class="span"></span>
+                </div>
+                
+                <div>
+                <label>Phone No.</label> 
+                 <input type="text" name="Phone number :" id="number" placeholder="Enter your Phone No." onkeydown="validateNo()">
+                 <span id="numErr" class="span"></span>
+                </div>
+
+                <div>
+               <label for="">Email ID</label>
+                <input type="email" name="Email :" id="email" placeholder="Enter your email id" onkeydown="validateEmail()"> 
+                <span id="emailErr" class="span"></span>
+            </div>
+
+                <div>
+               <label class="yrM">Your message</label>
+               <textarea name="" id="" cols="" rows="5" placeholder="Enter your message" onkeydown="validateMsg()"></textarea>
+               <span id="msgErr" class="span"></span>
+            </div>
+
+               <div class="submit-btn">
+                <button type="submit" onclick="submit()">Submit</button>
+ 
+               </div>
+               <span id="subErr"></span>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
